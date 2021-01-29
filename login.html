@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        .login-warpper {
+    background: url(./assets/img/login-bg.jpg) no-repeat center;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+}
+.login-box {
+	width: 800px;
+	background: #fff;
+	margin: 0 auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding:40px;
+	transform: translate(-50%, -50%);
+	box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.10);
+	border-radius:10px;
+}
+
+.loginbody{ padding-bottom:0;}
+.lock-screen {
+    width: 100%;
+    background: url(../images/lock-screen-bg.jpg);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.lock-screen-box {
+    width: 400px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: #ffffff2e;
+    border: 1px solid #ffffff91;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.42);
+    border-radius: 10px;
+    text-align: center;
+}
+.lock-screen-box label, .lock-screen-box a{ color: #fff;}
+.lock-screen-box .client-thumbs{ border-radius: 50%; margin-bottom:20px; border:5px solid #fff;}
+.lock-screen-box .btn-primary, .lock-screen-box .btn-primary:hover{
+    color: #fff;
+    background-color: #f28121;
+    border-color: #f28121;
+}
+.lock-screen-box hr{ background: #fff;}
+.text-yellow {
+    color: #FFEB3B!important;
+}
+.relativeBox { position: relative;}
+.relativeBox input{ padding-right: 50px;}
+.Ficon-r { position: absolute; right:10px; top:3px; font-size: 20px; cursor: pointer;}
+
+.login-box img{
+    width: 100%;
+}
+@media (max-width:767px) {
+
+.login-warpper	{background: #fff;}
+.lock-screen-box {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    top: auto;
+    left: auto;
+    padding: 40px;
+    transform: none;
+    border-radius: 10px;
+    text-align: center;
+	
+    border: none;
+} 
+	
+ .login-box {
+	width: 100%;
+	background: #fff;
+	margin: 0 auto;
+	position: relative;
+	top: inherit;
+	left: inherit;
+	padding: 15px;
+	transform: none;
+	box-shadow: none;
+	border-radius:0;
+}
+
+}
+
+    </style>
+</head>
+<body>
+    <div class="login-warpper">
+        <div class="login-box">
+            <div class="row align-items-center">
+                <div class="col-sm-7 d-none d-sm-block">
+                    <img src="assets/img/electricity.png">
+                </div>
+                <div class="col-sm-5">
+                    <h4 class="mb-3">Welcome Back :)</h4>
+                    <p>Login your account!</p>
+                    <div class="form-group">
+                        <label>Email ID</label><span class="text-danger">*</span>
+                        <input name="TxtEmail" type="text" class="form-control" placeholder="user@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Password<span class="text-danger">*</span></label>
+                        <input name="TxtPassword" type="password" class="form-control" placeholder="******">
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="BtnLogin" value="Log In" onclick="javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions(&quot;BtnLogin&quot;, &quot;&quot;, true, &quot;&quot;, &quot;&quot;, false, false))" id="BtnLogin" class="btn btn-primary btn-block">
+                    </div>
+                    <p>
+                        <a  href="#">Forgot Password?</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
